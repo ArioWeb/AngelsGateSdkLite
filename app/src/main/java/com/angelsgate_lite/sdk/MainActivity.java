@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //test url
-        String baseUrl = "https://arioweb.com/api";
+        String baseUrl = "";
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .addInterceptor(new EncodeRequestInterceptor(getApplicationContext()))
                 .build();
@@ -79,18 +79,11 @@ public class MainActivity extends AppCompatActivity {
         apiInterface = retrofit.create(ApiInterface.class);
 
         //Get From Server
-        String iv = "%tg$u2jLx8*XvnLN";
+        String iv = "";
         ///Get From Server
-        String SecretKey = "dzVSQAd^8*X7T-c&";
+        String SecretKey = "";
         ///Get From Server
-        String PublicKey =
-                "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApBqZLmYzYOKx61FJnFwT" +
-                        "ojvrUplKtY+B7Re/Z2phpip7Kk1l3vLy/Es4N4NKA00rVumrUW58pFmzHZXR3Azu" +
-                        "Wpem5ln66UiGqS+xXg+RK17ggC4frz6ejDg/ez+c0TtQj/Aoyt6XlQL18Y6otHwC" +
-                        "uY4ezPXaabfS31FQ6uM7yhrl3K8mWHFh9hOyI4f3OAwEivTDFUWAH0knWlcjfKrn" +
-                        "jl++tPYoVQnDLtPZjyFPM6gVjbTbw0YjWVgkoyNrGflQwGQtb52oOXSTTNstIoCY" +
-                        "Z1NJ73JW3yLb0MzLaAXxHGJ8xbAAMHOorKaMEWaaxx7hQ3GL0b7DgW5ytM7olXwy" +
-                        "mwIDAQAB";
+        String PublicKey ="";
 
 
         AngelGateConstants angel = new AngelGateConstants.AngelGateConstantsBuilder(
